@@ -1,0 +1,282 @@
+[00:00:05.395] Server  LOG     ✓ Ready in 4.1s
+[00:00:45.108] Server  LOG     ○ Compiling / ...
+[00:00:59.842] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:18.774] Browser ERROR   {}
+[00:03:19.063] Browser ERROR   {}
+[00:23:38.841] Server  LOG     ✓ Compiled in 1380ms
+[00:23:40.151] Server  LOG     ✓ Compiled in 1086ms
+[00:36:06.676] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:36:18.395] Browser ERROR   {}
+[01:09:56.411] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:09:56.902] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <ClientPageRoot Component={function AuthPage} serverProvidedParams={{...}}>
+      <AuthPage params={Promise} searchParams={Promise}>
+        <ThemeProvider theme={{...}}>
+          <ThemeProviderNoVars theme={{...}}>
+            <ThemeProvider themeId={undefined} theme={{...}}>
+              <ThemeProvider theme={{...}}>
+                <RtlProvider value={false}>
+                  <DefaultPropsProvider value={{}}>
+                    <CssBaseline>
+                    <Container maxWidth="sm" sx={{...}}>
+                      <MuiContainer-root as="div" ownerState={{maxWidth:"sm", ...}} className="MuiContain..." ref={null} ...>
+                        <Insertion>
++                       <div className="MuiContainer-root MuiContainer-maxWidthSm css-vc15zw-MuiContainer-root">
+-                       <style data-emotion="css-global o6gwfi" data-s="">
+
+[01:10:13.318] Browser ERROR   {}
+[01:28:57.404] Browser ERROR   {}
+[02:08:50.601] Server  LOG     ✓ Compiled in 19.9s
+[02:09:35.612] Server  ERROR   ⨯ ReferenceError: createTheme is not defined
+[02:09:50.068] Server  LOG     ✓ Compiled in 1135ms
+[02:10:09.493] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:10:10.983] Browser ERROR   ./app/page.tsx:309:1
+Parsing ecmascript source code failed
+  307 |       </Container>
+  308 |       );
+> 309 | }
+      | ^
+  310 |
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[02:10:11.872] Browser ERROR   ./app/page.tsx:309:1
+Parsing ecmascript source code failed
+  307 |       </Container>
+  308 |       );
+> 309 | }
+      | ^
+  310 |
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[02:10:11.872] Browser ERROR   ./app/page.tsx:309:1
+Parsing ecmascript source code failed
+  307 |       </Container>
+  308 |       );
+> 309 | }
+      | ^
+  310 |
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[02:10:14.791] Browser ERROR   uncaughtError: Error: Could not parse module '[project]/app/page.tsx'
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+[02:10:14.791] Browser ERROR   ./app/page.tsx:309:1
+Parsing ecmascript source code failed
+  307 |       </Container>
+  308 |       );
+> 309 | }
+      | ^
+  310 |
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[02:10:17.782] Browser ERROR   ./app/page.tsx:309:1
+Parsing ecmascript source code failed
+  307 |       </Container>
+  308 |       );
+> 309 | }
+      | ^
+  310 |
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[02:10:27.765] Server  ERROR   ⨯ ./app/page.tsx:309:1
+Parsing ecmascript source code failed
+  307 |       </Container>
+  308 |       );
+> 309 | }
+      | ^
+  310 |
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+
+[02:10:27.928] Browser ERROR   ./app/page.tsx:309:1
+Parsing ecmascript source code failed
+  307 |       </Container>
+  308 |       );
+> 309 | }
+      | ^
+  310 |
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[02:10:30.867] Server  LOG     ○ Compiling /_error ...
+[02:10:33.252] Browser ERROR   ./app/page.tsx:309:1
+Parsing ecmascript source code failed
+  307 |       </Container>
+  308 |       );
+> 309 | }
+      | ^
+  310 |
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[02:10:34.792] Browser ERROR   ./app/page.tsx:309:1
+Parsing ecmascript source code failed
+  307 |       </Container>
+  308 |       );
+> 309 | }
+      | ^
+  310 |
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[02:10:44.197] Browser ERROR   uncaughtError: Error: ./app/page.tsx:309:1
+Parsing ecmascript source code failed
+  307 |       </Container>
+  308 |       );
+> 309 | }
+      | ^
+  310 |
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+
+[02:10:44.368] Browser ERROR   ./app/page.tsx:309:1
+Parsing ecmascript source code failed
+  307 |       </Container>
+  308 |       );
+> 309 | }
+      | ^
+  310 |
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[02:10:45.117] Browser ERROR   ./app/page.tsx:309:1
+Parsing ecmascript source code failed
+  307 |       </Container>
+  308 |       );
+> 309 | }
+      | ^
+  310 |
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[02:10:58.804] Server  LOG     ✓ Compiled in 335ms
+[02:11:08.091] Server  ERROR   ⨯ ReferenceError: createTheme is not defined
+[02:11:08.268] Server  LOG     ✓ Finished filesystem cache database compaction in 14.6s
+[02:11:08.269] Server  LOG     ✓ Finished writing to filesystem cache in 13.8s
+[02:11:12.243] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:11:12.985] Browser ERROR   uncaughtError: ReferenceError: createTheme is not defined
+[02:28:34.882] Server  ERROR   ⨯ ReferenceError: createTheme is not defined
+[02:28:35.792] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:28:36.306] Browser ERROR   uncaughtError: ReferenceError: createTheme is not defined
+[02:29:57.377] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[02:29:57.379] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./app/page.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[02:29:57.389] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[02:29:57.419] Server  LOG     ✓ Compiled in 563ms
+[02:30:03.785] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold

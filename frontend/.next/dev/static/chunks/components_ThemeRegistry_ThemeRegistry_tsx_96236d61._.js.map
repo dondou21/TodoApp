@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/HP/Desktop/TodoApp/frontend/components/ThemeRegistry/ThemeRegistry.tsx"],"sourcesContent":["\"use client\";\r\n\r\nimport * as React from \"react\";\r\nimport { AppRouterCacheProvider } from \"@mui/material-nextjs/v16-appRouter\";\r\nimport { ThemeProvider } from \"@mui/material/styles\";\r\nimport CssBaseline from \"@mui/material/CssBaseline\";\r\nimport { createTheme } from \"@mui/material/styles\";\r\n\r\nconst theme = createTheme();\r\n\r\nexport default function ThemeRegistry({ children }: { children: React.ReactNode }) {\r\n    return (\r\n        <AppRouterCacheProvider>\r\n            <ThemeProvider theme={theme}>\r\n                <CssBaseline />\r\n                {children}\r\n            </ThemeProvider>\r\n        </AppRouterCacheProvider>\r\n    );\r\n}\r\n"],"names":[],"mappings":";;;;;AAGA;AACA;AACA;AACA;AANA;;;;;;AAQA,MAAM,QAAQ,IAAA,6NAAW;AAEV,SAAS,cAAc,EAAE,QAAQ,EAAiC;IAC7E,qBACI,6LAAC,wQAAsB;kBACnB,cAAA,6LAAC,mOAAa;YAAC,OAAO;;8BAClB,6LAAC,oLAAW;;;;;gBACX;;;;;;;;;;;;AAIjB;KATwB"}}]
+}
